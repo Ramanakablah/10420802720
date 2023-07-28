@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Traintile{
+  border: solid 2px skyblue;
+  border-radius: 18px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.Seats{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.13rem;
+  font-weight: 700;
+}
+
+.Trains{
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Grids{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
+}
+
+.Green{
+  color:green
+}
+
+.Skyblue{
+  color: skyblue;
+}
+
+.Red{
+  color: red;
+}
+
+.Traintile:hover{
+  background-color: rgba(135, 207, 235, 0.403);
+  transform: scale(1.02);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
